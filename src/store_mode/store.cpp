@@ -72,10 +72,10 @@ namespace store {
                 ::MessageBox(
                     nullptr,
                     TEXT(
-                        "SmokeAPI has downloaded an updated config for Store mode. "
+                        "MySkyApi has downloaded an updated config for Store mode. "
                         "Please restart Steam in order to apply the new Store config. "
                     ),
-                    TEXT("SmokeAPI - Store"),
+                    TEXT("MySkyApi - Store"),
                     MB_SETFOREGROUND | MB_ICONINFORMATION | MB_OK
                 );
             } catch (const Exception& ex) {
@@ -119,7 +119,7 @@ namespace store {
         );
 
         NEW_THREAD({
-            koalabox::ipc::init_pipe_server("smokeapi.store.steam", [](const koalabox::ipc::Request& request) {
+            koalabox::ipc::init_pipe_server("myskyapi.store.steam", [](const koalabox::ipc::Request& request) {
                 koalabox::ipc::Response response;
 
                 if (request.name < equals > "config::reload") {

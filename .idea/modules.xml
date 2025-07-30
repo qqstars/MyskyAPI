@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SmokeAPI.iml" filepath="$PROJECT_DIR$/.idea/SmokeAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MySkyApi.iml" filepath="$PROJECT_DIR$/.idea/MySkyApi.iml" />
     </modules>
   </component>
 </project>

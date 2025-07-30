@@ -1,8 +1,8 @@
 # Usage:
-# PS ..\SmokeAPI> .\build.ps1 64 Debug
+# PS ..\MySkyApi> .\build.ps1 64 Debug
 
 Set-Location (Get-Item $PSScriptRoot)
 
-. ./KoalaBox/build.ps1 SmokeAPI @args
+. ./KoalaBox/build.ps1 MySkyAPI @args
 
 Build-Project

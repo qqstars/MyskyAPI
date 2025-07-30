@@ -82,7 +82,7 @@ namespace smoke_api {
 
             koalabox::globals::init_globals(module_handle, PROJECT_NAME);
 
-            globals::smokeapi_handle = module_handle;
+            globals::myskyapi_handle = module_handle;
 
             config::init_config();
 
@@ -99,7 +99,7 @@ namespace smoke_api {
 
             LOG_DEBUG("Process name: '{}' [{}-bit]", exe_name, BITNESS)
 
-            if (koalabox::hook::is_hook_mode(globals::smokeapi_handle, STEAMAPI_DLL)) {
+            if (koalabox::hook::is_hook_mode(globals::myskyapi_handle, STEAMAPI_DLL)) {
                 koalabox::hook::init(true);
 
                 if (is_valve_steam(exe_name)) {

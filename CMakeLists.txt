@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 
-project(SmokeAPI VERSION 2.0.5)
+project(MySkyApi VERSION 2.0.5)
 
 include(KoalaBox/cmake/KoalaBox.cmake)
 
@@ -95,10 +95,10 @@ if (CMAKE_SIZEOF_VOID_P EQUAL 4)
     )
 endif ()
 
-add_library(SmokeAPI SHARED ${SMOKE_API_SOURCES} ${VERSION_RESOURCE})
+add_library(MySkyApi SHARED ${SMOKE_API_SOURCES} ${VERSION_RESOURCE})
 
 configure_output_name(${STEAMAPI_DLL})
 
 configure_include_directories()
 
-target_link_libraries(SmokeAPI PRIVATE KoalaBox)
+target_link_libraries(MySkyApi PRIVATE KoalaBox)

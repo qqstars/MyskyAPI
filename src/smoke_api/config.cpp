@@ -20,7 +20,7 @@ namespace smoke_api::config {
                 LOG_DEBUG("Parsed config:\n{}", Json(instance).dump(2))
             } catch (const Exception& e) {
                 const auto message = fmt::format("Error parsing config file: {}", e.what());
-                koalabox::util::error_box("SmokeAPI Error", message);
+                koalabox::util::error_box("MySkyApi Error", message);
             }
         }
     }
